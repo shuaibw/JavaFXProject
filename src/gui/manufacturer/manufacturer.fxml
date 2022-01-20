@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.manufacturer.ManufacturerController">
+    <left>
+        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="118.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleView" prefWidth="70.0" text="View All" />
+                <Button mnemonicParsing="false" onAction="#handleAdd" prefWidth="70.0" text="Add" />
+                <Button mnemonicParsing="false" onAction="#handleEdit" prefWidth="70.0" text="Edit" />
+            <Button mnemonicParsing="false" onAction="#handleDelete" prefWidth="70.0" text="Delete" />
+            <ImageView fitHeight="62.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/neon_cat.gif" />
+               </image>
+            </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </VBox>
+    </left>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="regCol" prefWidth="107.19994962215424" text="Registration" />
+                <TableColumn fx:id="yearCol" minWidth="9.600051879882812" prefWidth="92.80001068115234" text="Year" />
+                <TableColumn fx:id="colorCol" prefWidth="184.79998779296875" text="Colors" />
+                <TableColumn fx:id="makeCol" prefWidth="138.39999389648438" text="Make" />
+                <TableColumn fx:id="modCol" prefWidth="139.199951171875" text="Model" />
+                <TableColumn fx:id="priceCol" prefWidth="104.0" text="Price" />
+                <TableColumn fx:id="quantityCol" prefWidth="142.39996337890625" text="Quantity" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
