@@ -1,7 +1,7 @@
 # Car Inventory Manager with JavaFX
 ## _Term Project for L1T2_
 -------------
-An inventory manager for cars with multi-threading and local networking support. This project was aimed to learn about networking and multi-threading in Java.
+An inventory manager for cars with multi-threading and local networking support. This project was aimed to learn about networking and multi-threading in Java. A demonstration can be found [here](https://youtu.be/1klsKJLZMzQ)
 
 ## Features
 
